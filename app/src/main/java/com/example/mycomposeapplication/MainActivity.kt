@@ -40,23 +40,37 @@ fun DefaultPreview() {
             horizontalAlignment = Alignment.Start,
             verticalArrangement = Arrangement.Top
         ) {
-            Surface(modifier = Modifier
-                .width(200.dp)
-                .height(50.dp)) {
+            Surface(
+                modifier = Modifier
+                    .width(200.dp)
+                    .height(50.dp)
+            ) {
                 MyTextView()
             }
-            Surface(modifier = Modifier
-                .width(200.dp)
-                .height(50.dp)) {
+            Surface(
+                modifier = Modifier
+                    .width(200.dp)
+                    .height(50.dp)
+            ) {
                 ExpandableCard()
             }
-            Surface(modifier = Modifier
-                .width(200.dp)
-                .height(50.dp)) {
+            Surface(
+                modifier = Modifier
+                    .width(200.dp)
+                    .height(50.dp)
+            ) {
                 MyButton(onClicked = {
                     Log.d("Niko", "clicked")
                 })
             }
+            Surface(
+                modifier = Modifier
+                    .width(200.dp)
+                    .height(50.dp)
+            ) {
+                MyCoilLoadImage()
+            }
+
         }
     }
 }
