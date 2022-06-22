@@ -1,4 +1,4 @@
-package com.example.mycomposeapplication
+package com.example.mycomposeapplication.ui.mycomponents
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing
@@ -83,13 +83,14 @@ fun ExpandableCard() {
                 }
             }
             //creo il contenuto da mostrare una volta espanso
-            if (expandedState){
-                Text(text = "Sono un testo dentro un accordion".repeat(20),
-                fontSize = MaterialTheme.typography.subtitle1.fontSize,
+            if (expandedState) {
+                Text(
+                    text = "Sono un testo dentro un accordion".repeat(20),
+                    fontSize = MaterialTheme.typography.subtitle1.fontSize,
                     fontWeight = FontWeight.Normal,
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
-                    )
+                )
             }
         }
     }

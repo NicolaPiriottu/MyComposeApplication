@@ -1,4 +1,4 @@
-package com.example.mycomposeapplication
+package com.example.mycomposeapplication.ui.mycomponents
 
 import android.util.Log
 import androidx.compose.animation.animateContentSize
@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-
 import androidx.compose.ui.unit.dp
+import com.example.mycomposeapplication.R
 import com.example.mycomposeapplication.ui.theme.Shapes
 
 /**

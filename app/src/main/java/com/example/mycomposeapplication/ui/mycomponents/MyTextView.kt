@@ -1,8 +1,8 @@
-package com.example
+package com.example.mycomposeapplication.ui.mycomponents
 
 import android.util.Log
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Icon
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.input.KeyboardType
 
 @Composable
 fun MyTextView() {
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxWidth()) {
 
         var text by remember { mutableStateOf("Type here ...") }
 
