@@ -26,11 +26,15 @@ fun MyTextView() {
     Column(modifier = Modifier.fillMaxWidth()) {
 
         var text by remember { mutableStateOf("Type here ...") }
-
+        var maxChar = 20
         //or TextField
         OutlinedTextField(
             value = text,
-            onValueChange = { newText -> text = newText },
+            onValueChange = { newText ->
+                if (newText.length <= maxChar) {
+                    text = newText
+                }
+            },
             label = { Text(text = "Title") },
             leadingIcon = {
                 IconButton(onClick = { /*TODO*/ }) {

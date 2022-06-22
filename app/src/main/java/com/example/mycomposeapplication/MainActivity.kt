@@ -87,8 +87,17 @@ fun DefaultPreview() {
                     .wrapContentHeight()
 
             ) {
-                MyLazyColumnMock()
+                MyPasswordTextField()
             }
+
+           /* Surface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .wrapContentHeight()
+
+            ) {
+                MyLazyColumnMock()
+            }*/
         }
     }
 }
