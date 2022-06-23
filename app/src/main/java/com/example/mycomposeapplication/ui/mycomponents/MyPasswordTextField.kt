@@ -1,4 +1,4 @@
-package com.example.mycomposeapplication
+package com.example.mycomposeapplication.ui.mycomponents
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
@@ -14,6 +14,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.mycomposeapplication.R
 
 /**
  * Created by Nicola Luigi Piriottu on 20/06/22.
@@ -57,7 +58,7 @@ fun MyPasswordTextField() {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 private fun MyPasswordTextFieldPreview() {
     MyPasswordTextField()

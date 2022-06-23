@@ -16,11 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.mycomposeapplication.ui.mycomponents.ExpandableCard
-import com.example.mycomposeapplication.ui.mycomponents.MyButton
-import com.example.mycomposeapplication.ui.mycomponents.MyTextView
-import com.example.mycomposeapplication.ui.mycomponents.MyCoilLoadImage
+import com.example.mycomposeapplication.ui.mycomponents.*
 import com.example.mycomposeapplication.ui.mylazycolumn.MyCustomItem
+import com.example.mycomposeapplication.ui.mylazycolumn.MySwappableActionBox
 import com.example.mycomposeapplication.ui.mylazycolumn.PersonRepository
 import com.example.mycomposeapplication.ui.theme.MyComposeApplicationTheme
 
@@ -81,23 +79,23 @@ fun DefaultPreview() {
                 MyCoilLoadImage()
             }
 
-            Surface(
+            /*Surface(
                 modifier = Modifier
                     .fillMaxWidth()
                     .wrapContentHeight()
 
             ) {
                 MyPasswordTextField()
-            }
+            }*/
 
-           /* Surface(
+            Surface(
                 modifier = Modifier
                     .fillMaxWidth()
                     .wrapContentHeight()
 
             ) {
-                MyLazyColumnMock()
-            }*/
+                MyLazyColumnRepository()
+            }
         }
     }
 }
@@ -109,7 +107,7 @@ private fun MyLazyColumnRepository() {
 
     LazyColumn(contentPadding = PaddingValues(12.dp)) {
         items(items = getAllData) { person ->
-            MyCustomItem(person = person)
+            MySwappableActionBox(person = person)
         }
     }
 }
